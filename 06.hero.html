@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omnifood Hero Section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        font-family: "Rubik", sans-serif;
+        color: #444;
+      }
+      .container {
+        margin: 0 auto;
+        width: 1200px;
+      }
+      header {
+        height: 100vh;
+        position: relative;
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+        color: #fff;
+      }
+      nav {
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        padding: 32px;
+      }
+      .header-container {
+        width: 1200px;
+        position: absolute;
+        /*in Realation*/
+        left: 50%;
+        top: 50%;
+        /* in relation to element size*/
+        transform: translate(-50%, -50%);
+        /* text-align: center; */
+      }
+      .header-container-inner {
+        width: 50%;
+        /* background-color: aquamarine; */
+      }
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 48px;
+      }
+      .btn:link,
+      .btn:visited {
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #e67e22;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        padding: 16px 32px;
+        border-radius: 9px;
+      }
+      h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
+      }
+      section {
+        padding: 96px 0;
+        background-color: #f7f7f7;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div>Logo</div>
+        <div>Navigation</div>
+      </nav>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>A Healthy Meal Delivery To Your Door,Very Single day!</h1>
+          <p>
+            The Smart 365-days-perYear-Food-Subscription that will make your.
+            healty again Tailored to healthy taste! to nutrational needs.
+          </p>
+          <a href="#" class="btn">Starting eating well</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2>Some random heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi error
+          harum repellendus. Nesciunt ex eos asperiores harum voluptatum
+          voluptatem, nostrum maxime temporibus a quae repellat. Tenetur dolore
+          aliquid excepturi debitis?
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

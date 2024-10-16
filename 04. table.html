@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion component</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,
+  wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        /*
+          SPACING SYSTEM (px)
+          2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+          FONT SIZE SYSTEM (px)
+          10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+          */
+        /*
+          main color : #087f5b
+          grey color: #343a40
+          */
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        /* ------------------------ */
+        /* GENERAL STYLES */
+        /* ------------------------ */
+        body {
+          font-family: "Inter", sans-serif;
+          color: #343a40;
+          line-height: 1;
+        }
+        table{
+          width: 800px;
+          margin: 100px auto;
+          background-color: #fff;
+          /* border: 2px solid black; */
+          border-collapse: collapse;
+        }
+        th, td{
+            /* border: 1px solid black; */
+            padding: 16px 24px;
+            text-align: left;
+        }
+        thead th{
+            background-color: #087f5b;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 8px;
+        }
+        tbody tr:nth-child(odd){
+            background-color: rgba(128, 128, 128, 0.114);
+        }
+        tbody tr:nth-child(even){
+            background-color: #fff;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>width</th>
+          <th>height</th>
+          <th>depth</th>
+          <th>weight</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>100cm</th>
+          <td>120cm</td>
+          <td>140cm</td>
+          <td>50kg</td>
+        </tr>
+        <tr>
+          <th>80cm</th>
+          <td>120cm</td>
+          <td>140cm</td>
+          <td>90kg</td>
+        </tr>
+        <tr>
+          <th>75cm</th>
+          <td>80cm</td>
+          <td>140cm</td>
+          <td>85cm</td>
+        </tr>
+        <tr>
+          <th>95cm</th>
+          <td>75cm</td>
+          <td>45cm</td>
+          <td>75kg</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

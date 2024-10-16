@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion component</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,
+  wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+        */
+      /*
+        main color : #087f5b
+        grey color: #343a40
+        */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+      img {
+        height: 200px;
+        border-radius: 8px;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.125);
+        transform: scale(1.5);
+      }
+      .carousel {
+        width: 800px;
+        margin: 100px auto;
+        background-color: #087f5b;
+        padding: 32px;
+        padding-left: 86px;
+        padding-right: 48px;
+        display: flex;
+        position: relative;
+        /* align-items: center; */
+        gap: 86px;
+        border-radius: 16px;
+      }
+      .carousel-pera {
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 32px;
+        line-height: 1.5;
+        align-items: center;
+      }
+      .carousel-author {
+        color: #fff;
+        font-size: 16px;
+        padding-left: 8px;
+      }
+      .carosel-job {
+        color: #fff;
+        font-size: 16px;
+        padding-left: 8px;
+        line-height: 1.5;
+      }
+      .btn {
+        color: #fff;
+        border: none;
+        height: 40px;
+        width: 40px;
+        border-radius: 50px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.125);
+        cursor: pointer;
+      }
+      .btn-icon {
+        stroke: #087f5b;
+        height: 24px;
+        width: 24px;
+      }
+      .btn--left {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .btn--right {
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+      .dot{
+        width: 12px;
+        height: 12px;
+        background-color: #fff;
+        border: 2px solid #087f5b;
+        border-radius: 50px;
+      }
+      .dots{
+        position: absolute;
+        left: 50%;
+        display: flex;
+        bottom: 0;
+        transform: translate(50%,32px);
+        left: 50%;
+        gap: 12px;
+      }
+      .--1{
+        background-color: #087f5b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="maria.jpg" src="maria" />
+      <blockquote class="carousel-text">
+        <p class="carousel-pera">
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          velit consequuntur placeat soluta voluptatibus veniam qui maiores
+          temporibus nemo magni?"
+        </p>
+        <p class="carousel-author">maria de almode</p>
+        <p class="carosel-job">senior product manager mse</p>
+      </blockquote>
+    <button class="btn btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <button class="btn btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+      <div class="dots">
+        <button class="dot --1">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
